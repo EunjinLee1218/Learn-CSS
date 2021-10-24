@@ -13,8 +13,53 @@
     border: 10px dashed red;
     background-color: yellow;
     border-radius: 50%;
+      
+    }
+  .sphere::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: 8px solid black;
+    border-top-left-radius: 50px;
+    border-bottom: 0px;
+    border-right: 0px;
+    
+  }
+
+  .sphere1::before {
+    content: "";
+    position: absolute;
+    left: 130px;
+    top: 40px;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    border: 8px solid black;
+    border-top-right-radius: 50px;
+    border-bottom: 0px;
+    border-left: 0px;
     
     
   }
+  .sphere::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: #daa520;
+    
+  }
+      
+    
+    
+  
 </style>
 <div class="sphere"></div>
+<div class="sphere1"></div>
