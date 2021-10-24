@@ -1,6 +1,6 @@
 <style>
   body {
-    background-color: black;
+    background-color: white;
     display: flex;
     justify-content: left;
     
@@ -43,6 +43,19 @@
     border-bottom: 0px;
     border-left: 0px;
     
+  }
+  .nose::before {
+    content: "";
+    position: absolute;
+    left: 70px;
+    top: 80px;
+    z-index: 3;
+    width: 80px;
+    height: 80px;
+    border: 8px solid black;
+    border-radius: 50px;
+    border-top: 0px;
+    
     
   }
   .sphere::after {
@@ -63,3 +76,4 @@
 </style>
 <div class="sphere"></div>
 <div class="sphere1"></div>
+<div class="nose"></div>
